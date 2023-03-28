@@ -106,9 +106,6 @@ class DevelopmentData extends Seeder
             ]);
         }
         fclose($handleArticleCategory);
-
-
-
     }
 
     function convertTimestamp($timestamp): string
