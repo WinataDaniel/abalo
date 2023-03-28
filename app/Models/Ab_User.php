@@ -13,6 +13,10 @@ class Ab_User extends Model
     protected $table = 'ab_user';
     public $timestamps = false;
 
+    protected $fillable = [
+        'id', 'ab_name', 'ab_password', 'ab_mail'
+    ];
+
     /**
      * @return HasMany - Return all articles from this user.
      */
