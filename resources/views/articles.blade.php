@@ -31,7 +31,7 @@
             @foreach($articlesObj as $article)
                 <tr>
                     <td>{{$article->id}}</td>
-                    <td>{{$article->ab_name}}</td>
+                    <td>{{$article['ab_name']}}</td>
                     <td>{{$article->ab_price}}</td>
                     <td>{{$article->ab_description}}</td>
                     <td>
