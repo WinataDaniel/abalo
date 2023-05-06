@@ -30,7 +30,5 @@ Route::get('/isloggedin', [App\Http\Controllers\AuthController::class, 'islogged
 
 Route::get('/articles', [\App\Http\Controllers\ArticlesController::class,'index'])->name('articles');
 
-//Route::get('/articleCategories', [\App\Http\Controllers\ArticleCategoriesController::class,'index'])->name('articleCategories');
-
 Route::get('/newArticle', [\App\Http\Controllers\ArticlesController::class,'promptNewArticle'])->name('newArticle');
 Route::post('/articles', [\App\Http\Controllers\ArticlesController::class,'addNewArticle']);
