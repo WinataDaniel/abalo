@@ -15,6 +15,20 @@ class Ab_Article extends Model
     public $timestamps = false;
 
     /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'id',
+        'ab_name',
+        'ab_price',
+        'ab_description',
+        'ab_creator_id',
+        'ab_createdate'
+    ];
+
+    /**
      * Get the user that owns this article.
      * @return BelongsTo
      */

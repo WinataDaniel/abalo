@@ -10,4 +10,6 @@ class Ab_Article_Has_ArticleCategory extends Model
     use HasFactory;
 
     protected $table = 'ab_article_has_articlecategory';
+    public $timestamps = false;
+
 }
